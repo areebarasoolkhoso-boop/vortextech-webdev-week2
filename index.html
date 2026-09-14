@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form | Week 2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Contact Me</h1>
+    <button id="themeToggle">🌙 Dark Mode</button>
+  </header>
+
+  <main>
+    <form id="contactForm">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name">
+        <p class="error" id="nameError"></p>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text" id="email">
+        <p class="error" id="emailError"></p>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message"></textarea>
+        <p class="error" id="messageError"></p>
+      </div>
+
+      <button type="submit">Send</button>
+    </form>
+
+    <p id="successMessage"></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
